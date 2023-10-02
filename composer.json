@@ -1,0 +1,32 @@
+{
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "behat/behat": "*",
+        "symfony/console": "^6.3",
+        "symfony/orm-pack": "^2.4",
+        "symfony/dependency-injection": "^6.3",
+        "ramsey/uuid": "^4.7"
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "allow-plugins": {
+            "ocramius/package-versions": true,
+            "symfony/flex": true
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Fulll\\": "src/",
+            "Doctrine\\": "vendor/doctrine/orm/lib/Doctrine/"
+        }
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10",
+        "friendsofphp/php-cs-fixer": "^3.34",
+        "kubawerlos/php-cs-fixer-custom-fixers": "^3.16",
+        "squizlabs/php_codesniffer": "*"
+    }
+}
